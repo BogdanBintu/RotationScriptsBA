@@ -29,6 +29,11 @@ def seq2Int_rc(seq):
 # Faster (500x) cython functions to convert seq->number. Compiled on a Windows machine. 
 # Recompile on Linux by running in a cell in a jupyter notebook in the current directory: !python C_Tools\setup.py build_ext --inplace
 # If too complicated, comment out line bellow and have patience.
+import sys
+import os
+ctoolspath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "C_Tools")
+if ctoolspath not in sys.path:
+    sys.path.append(ctoolspath)
 from seqint import seq2Int,seq2Int_rc
 
 import scipy.sparse as ss
