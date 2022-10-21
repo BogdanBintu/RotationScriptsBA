@@ -1,0 +1,2 @@
+seq,name,gc,genome,local_genome,pb_index,reg_index,reg_name,repetitive,tm,top_transcriptome,transcriptome
+b'CCCCCATTGGCAAGGGGACAACTCACCATCTCATGTATGT',chr8_128220101_128225101_5kb_pb_4275,0.525,27.0,24.0,4275,0,chromosome 8:130343096-130348096,0.0,82.30910741825608,0.0,20.0
